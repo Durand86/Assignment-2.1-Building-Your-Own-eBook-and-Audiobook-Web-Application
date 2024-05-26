@@ -1,0 +1,203 @@
+<!--Create our doc type that will tell the browser what type of page and version of html this is-->
+<!DOCTYPE html>
+<!--Create our HTML tag will contain all of our HTML code-->
+<html>
+<!--Head Section-->
+<head>
+    <!--Creating a Tile for the web page-->
+    <title>Wolven Fables</title>
+
+    <!--Set the char encoding-->
+    <meta charset="UTF-8">
+    <!--Setting the Veiwport to the device width, making the page responsive-->
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <style> /*Adding an Inline style for the webpage*/
+        body {
+            font-family: Garamond, sans-serif;
+            margin: 20px;
+            background-color: #25282b; /*Adding background color*/
+        }
+        header {
+            text-align: center;
+        }
+        header h1, header h3 {
+            color: rgb(2, 165, 2);
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .content h2 {
+            font-size: 4.0em;
+            color: rgb(45, 81, 239);
+        }
+        .content a {
+            font-size: 5.0em;
+            color: rgb(45, 81, 239);
+        }
+        /* Adding an AI image at the top of the page, and a url path for the image*/
+        .background-image {
+            background-image: url('C:/Users/Veteran/Desktop/MS587/Assignment_2-1_Building_Your_Own_eBook_and_Audiobook_Web_Application/Main_Page_background_Image.png'); 
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        /* Adding a bottome image and path to the AI picture */
+        .bottom-background {
+            background-image: url('C:/Users/Veteran/Desktop/MS587/Assignment_2-1_Building_Your_Own_eBook_and_Audiobook_Web_Application/Main_Page_background_Image2.png'); 
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<!--Adding inline CSS-->
+
+<body style="font-family: Garamond, sans-serif; margin: 20px;"> 
+    <!--create our header tag that will conatain our header content-->
+    <!-- adding a sub-header-->
+    <header>
+        <h1 style="text-align: center; font-size: 6.0em; color: rgb(2, 165, 2);">Wolven Fables</h1>
+        <h2 style="text-align: center; font-size: 3.0em; color: rgb(2, 165, 2);">A world of tails from all the small things.</h2>
+    </header>
+    <!--Main Content section-->
+    <!--Use a div tag, stands for division, for dividing up the page-->
+    <!-- Background image section -->
+    <div class="background-image"></div>
+    <div style="margin-bottom: 20px;">
+        <h3 style="font-size: 1.0em; color: rgb(2, 165, 2);">The Guardians of Everwood:The Sagas of a Hero's Quest</h3>
+        <!--Adding a paragraph summary-->
+        <p style="font-size: 1.0em; color: rgb(2, 165, 2);">A heartwarming tale of courage and friendship. In the magical forest of Everwood, a young fox named Felix and his friends set out to save their home from the greedy weasel, Grindle, who is polluting their environment. 
+            Through bravery and teamwork, they confront Grindle, restore their forest, and learn the true value of protecting nature over wealth. This story teaches important lessons about unity, environmental stewardship, and the power of standing up against greed.</p>
+        <!-- Creating a link to download the story-->
+        <a href="#story1" onclick="downloadStory('story1');" style="font-size: 5.0 em; color: rgb(45, 81, 239);">Download Saga One:The Peril in Everwood
+        </a>
+        <!-- Adding the stories and givien each ones their assigned ID-->
+        <p Id="story1" style="display: none;">   Once upon a time in the heart of the mystical land of Everwood, a vast forest filled with towering trees and sparkling rivers, lived a community of anthropomorphic animals. Everwood was a peaceful place where all creatures lived in harmony, tending to their homes and looking after the environment that sustained them.
+            Among these creatures was a brave young fox named Felix, known for his adventurous spirit and kind heart. Felix lived with his family in a cozy den beneath an ancient oak tree. He had many friends, including a wise old owl named Ollie, a swift and clever squirrel named Saffy, and a gentle deer named Daisy.
+            One sunny morning, Felix was out exploring when he noticed something unusual. The normally clear and flowing River Sparkle was clogged with black sludge. Fish struggled to breathe, and the once vibrant plants along the riverbank were withering. Felix rushed to Ollie’s tree to share the dreadful news.
+            Ollie, perched high in his tree, looked down at Felix with wise, concerned eyes. “This is no natural occurrence,” he hooted. “I fear an evil force is at work, seeking to poison our beloved Everwood.”
+            Word of the river’s plight spread quickly, and soon, a council of the animals was called. From the tallest giraffe to the tiniest mouse, all gathered to discuss how to save their home. The oldest and wisest among them, Grandfather Tortoise, spoke gravely. “We must find the source of this poison and stop it before Everwood is lost forever.”
+            Felix, filled with determination, stood up. “I will go on this quest to save Everwood. Who will join me?”
+            Saffy, Daisy, and Ollie stepped forward, volunteering to accompany Felix on his perilous journey. Together, they set out to uncover the dark secret threatening their home.
+        </p>
+         <!--Creating a link to download the audio book anh_AudioBook.mp3-->
+         <br> <!--Creating a break beween links-->
+         <a href="The_Peril_in_Everwood.Mp3.mp3" download= "The_Peril_in_Everwood.Mp3.mp3" style="font-size: 5.0 em; color: rgb(45, 81, 239);">Listen to MP3 Audio Book Saga One:The Peril in Everwood
+        </a>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+        <!-- Creating a link to download the first story-->
+        <a href="#story2" onclick="downloadStory('story2');" style="font-size: 5.0 em; color: rgb(45, 81, 239);">Download Saga two: The Journey Through the Shadowlands
+        </a>
+        <p Id="story2" style="display: none;">  The brave quartet journeyed deep into the heart of Everwood, following the polluted river upstream. They trekked through dense thickets and crossed treacherous ravines, guided by Ollie’s keen eyesight and Saffy’s knowledge of the forest paths. Along the way, they encountered numerous challenges, from fierce storms to daunting cliffs, but their determination never wavered.
+            One evening, as they made camp under the stars, Daisy spoke softly. “I sense something sinister lies ahead. We must be cautious.”
+            The next day, their journey brought them to the Shadowlands, a dark and desolate part of the forest where few dared to venture. The trees here were gnarled and twisted, and an eerie silence hung in the air. As they ventured further, they discovered the source of the river’s poison: a massive factory, belching smoke and dumping waste into the water.
+            Guarding the factory was the evil tycoon, Grindle the Greedy Weasel, known for his insatiable desire for wealth. Grindle had enslaved many animals, forcing them to work in his factory and cut down the ancient trees of Everwood for profit. The sight of the suffering creatures and the destruction of their home filled Felix and his friends with sorrow and anger.
+            “We must free them and stop this madness,” Felix declared.
+            With stealth and bravery, they snuck into the factory. Saffy’s agility and quick thinking helped them avoid detection, while Ollie used his wisdom to devise a plan to sabotage the machinery. Daisy’s gentle nature soothed the enslaved animals, giving them hope and rallying them to fight back against Grindle.
+            In a daring raid, they freed the captive animals and destroyed the factory’s operations, but their victory was not yet complete. Grindle, enraged by their actions, confronted them, his eyes blazing with fury.
+            “You meddling fools!” he snarled. “You think you can stop me? I will not be defeated so easily.”
+         </p>
+         <br>
+         <a href="The Journey Through the Shadowlands.mp3" download= "The Journey Through the Shadowlands.mp3" style="font-size: 5.0 em; color: rgb(45, 81, 239);">Listen to MP3 Audio Book Saga Two:The Journey Through the Shadowlands
+         </a>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <!-- Creating a link to download the first story-->
+        <a href="#story3" onclick="downloadStory('story3');" style="font-size: 5.0 em; color: rgb(45, 81, 239);">Download Saga Three:The Battle for Everwood
+        </a>
+        <p Id="story3" style="display: none;">  The final showdown between Grindle and the heroes took place in the heart of the factory. Grindle, wielding a staff imbued with dark magic, unleashed a torrent of fire and smoke. Felix and his friends fought bravely, dodging the weasel’s attacks and countering with their own.
+            Ollie’s keen eyesight spotted a weakness in Grindle’s defenses, and he guided Felix to exploit it. Saffy, with her swift agility, darted around Grindle, distracting him, while Daisy’s strength and courage provided much-needed support.
+            In the midst of the battle, Felix remembered the lessons he had learned from his family and friends about the importance of courage, friendship, and protecting the environment. Using these lessons, he found the strength to press on despite the overwhelming odds.
+            “Your greed and cruelty will not prevail!” Felix shouted as he lunged at Grindle, knocking the staff from his grasp. Without his dark magic, Grindle was powerless. The animals of Everwood, inspired by Felix and his friends, rallied together and drove Grindle from their land.
+            With Grindle defeated, the factory was dismantled, and the polluted river began to heal. The animals worked together to restore Everwood to its former beauty, planting new trees and cleaning the waterways. Felix and his friends were hailed as heroes, and their tale was told for generations.
+            Everwood thrived once more, a testament to the power of courage, unity, and the unwavering commitment to protecting the environment. The animals had learned that their home was more precious than any wealth and that by working together, they could overcome even the greatest of evils.
+            Moral of the Story: The Guardians of Everwood teaches us that true wealth lies in the health and beauty of our natural world. Protecting our environment and standing up against greed and destruction is a noble and vital quest for all who cherish life and harmony.
+            </p>
+         <br>
+         <a href="The Battle for Everwood.mp3" download= "The Battle for Everwood.mp3" style="font-size: 5.0 em; color: rgb(45, 81, 239);">Listen to MP3 Audio Book Saga Three:The Battle for Everwood
+         </a>
+
+    </div>
+    <h4 style="font-size: 1.0em; color: rgb(2, 165, 2);">The Brave Quest of Tiber the Turtle</h4>
+    <p style="font-size: 1.0em; color: rgb(2, 165, 2);">An inspiring tale of courage and unity. In the peaceful village of Shellville, the turtles are oppressed by the powerful Hawkclaws, led by the ruthless King Talon. 
+        Tiber, a small but determined turtle, leads his friends—Luna the wise owl, Buster the quick-witted rabbit, and Flora the gentle deer—on a quest to free their people. 
+        Through their unique strengths and unwavering determination, they confront King Talon, end the oppression, and teach the lesson that being different does not make one less capable or valuable. 
+        This story highlights the importance of unity, courage, and valuing individual abilities.</p>
+
+        <div style="margin-bottom: 20px;">
+            <!-- Creating a link to download the first story-->
+            <a href="#story4" onclick="downloadStory('story4');" style="font-size: 5.0 em; color: rgb(45, 81, 239);">Download Saga one: The Oppression in Shellville
+            </a>
+            <p Id="story4" style="display: none;"> In the heart of the tranquil land of Verdantia, nestled beside a shimmering lake, lay the peaceful village of Shellville. 
+               This charming village was home to a community of anthropomorphic turtles known for their wisdom and gentle nature. The turtles lived harmoniously, valuing each other's differences and celebrating their unique abilities. 
+               However, Shellville's peace was threatened by the neighboring kingdom of the Hawkclaws, a powerful clan of hawks who prided themselves on their strength and speed. Led by the ruthless King Talon, the Hawkclaws oppressed the turtles, demanding tribute and using them as laborers. 
+               The turtles, unable to match the hawks' might, suffered in silence.
+               Among the turtles was a young and determined turtle named Tiber. Unlike the other turtles, Tiber was small and often underestimated due to his size. Despite this, he possessed a courageous heart and a fierce determination to bring justice to his people.
+               One evening, as the sun set over the lake, Tiber gathered his friends—Luna the wise owl, Buster the quick-witted rabbit, and Flora the gentle deer—to discuss a plan to free Shellville from the Hawkclaws' tyranny. "We cannot let fear rule us," Tiber declared. 
+               "We must stand up for our rights and show the Hawkclaws that we are not to be underestimated."
+               Luna nodded thoughtfully. "King Talon's strength lies in his belief that we are weak. We must use our strengths, however different they may be, to outsmart him."
+               Buster, always ready for an adventure, grinned. "I'm in! Let's show them what we're made of." Flora, though hesitant, agreed as well. "Our differences are our strengths. Together, we can achieve anything.
+               "Determined and united, the friends set out on their quest to liberate Shellville. They knew it would be a perilous journey, but their hearts were filled with hope and courage.
+             </p>
+             <br>
+         <a href="The Oppression in Shellville.mp3" download= "The Oppression in Shellville.mp3" style="font-size: 5.0 em; color: rgb(45, 81, 239);">Listen to MP3 Audio Book Saga One:The Oppression in Shellville
+         </a>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <!-- Creating a link to download the first story-->
+            <a href="#story5" onclick="downloadStory('story5');" style="font-size: 5.0 em; color: rgb(45, 81, 239);">Download Saga two: The Liberation of Shellville
+            </a>
+            <p Id="story5" style="display: none;">  The brave quartet journeyed through the dense forests and across the rolling hills of Verdantia, finally reaching the Hawkclaws' fortress perched high on a rocky cliff. 
+                They observed the hawks' patrols and devised a plan to infiltrate the fortress and confront King Talon.
+                Luna, with her keen night vision and wisdom, guided them through the shadows, avoiding detection. Buster, using his agility and speed, scouted ahead and disabled traps. 
+                Flora used her gentle nature to soothe and persuade the hawk guards they encountered, convincing them to leave their posts. Tiber, despite his small size, led the group with unwavering determination.
+                As they reached the heart of the fortress, they found King Talon in his grand hall, surrounded by his fiercest warriors. Tiber stepped forward boldly. 
+                "King Talon, we are here to demand the freedom of our people. Your oppression ends today."
+                King Talon laughed mockingly. "A turtle dares to challenge me? You are weak and insignificant."
+                But Tiber, standing tall, replied firmly, "We may be different, but that does not make us less. 
+                Our strength lies in our unity and our determination."
+                With that, Luna swooped down, creating a diversion with her wings, while Buster and Flora skillfully disarmed the guards. 
+                Tiber confronted King Talon directly, using his agility to dodge the hawk's attacks. With each move, Tiber's friends supported him, their unique abilities complementing each other perfectly.
+                Realizing that his strength was no match for their combined efforts, King Talon was forced to retreat. 
+                The Hawkclaws, seeing their leader defeated, surrendered and agreed to release the turtles from their oppressive rule.
+                With the Hawkclaws' tyranny ended, Shellville's residents rejoiced. 
+                They celebrated not only their newfound freedom but also the lesson that Tiber and his friends had taught them: being different does not make one less capable or valuable.
+                From that day forward, the turtles of Shellville lived in peace, embracing their differences and working together to build a better future. Tiber, Luna, Buster, and Flora became heroes, their tale of bravery and unity told for generations.
+                Moral of the Story: The Brave Quest of Tiber the Turtle teaches us that true strength lies not in physical might but in unity, courage, and valuing the unique abilities of each individual. Differences should be celebrated, as they make us stronger together.
+                </p>
+             <br>
+         <a href="The Liberation of Shellville.mp3" download= "The Liberation of Shellville.mp3" style="font-size: 5.0 em; color: rgb(45, 81, 239);">Listen to MP3 Audio Book Saga Two:The Liberation of Shellville
+         </a>
+        </div>
+        <div class="bottom-background"></div>
+    <!--Using JavaScript functions to enable user to download the stories-->
+    <!--JavaScript makes the page interactive-->
+    <script>
+        //Create a function for users to download the storyID
+        function downloadStory(storyId){
+            //Retrieve story content using the Id for the story.
+            var storyContent = document.getElementById(storyId).textContent;
+            // Create a new blob object that will contain the story contant.
+            var blob = new Blob([storyContent], {type: "text/plain"});
+            //Create a link to object 
+            var link = document.createElement("a");
+            //Set the link's herf attribute to the url object that contains the blob object
+            link.href = URL.createObjectURL(blob); 
+            //Set the link's dowanload attribute to the story's tile
+            link.download = storyId + ".txt";
+            //Programcally click the link to the download the story
+            // notice the is automagically downloads the story as a text file
+            link.click();       
+        }
+    </script>
+</body>
+
+</html>
